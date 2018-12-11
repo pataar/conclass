@@ -26,9 +26,8 @@ Conclass is really flexible. You can put in pretty much anything in any format a
 ### Some examples
 ```javascript
 import conclass from 'conclass';
-conclass("fa", {
-	"fa-fw": true
-}); // -> fa fa-fw
+
+conclass("fa", { "fa-fw": true }); // -> fa fa-fw
 
 conclass("button", ["key1", {conditional: false, truthy: true}]); // -> button key1 truthy
 
