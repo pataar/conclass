@@ -55,14 +55,20 @@ conclass("Wow!", [
 ### Example in React
 Conclass is a perfect match with React!
 ```jsx
-import cc from 'conclass';
+import conclass from 'conclass';
 
-const Button = ({ large, primary, children }) => <button className={cc({ large, primary })}>{children}</button>;
+const Button = ({ large, primary, children }) => {
+	return <button className={conclass({ large, primary })}>{children}</button>;
+}
 
 // So you can use:
 ...
 
 render() {
-	return <Button large primary>Click me!</Button>;
+	return (
+		<Button large primary>
+			Click me!
+		</Button>
+	);
 }
 ```
