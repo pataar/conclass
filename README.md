@@ -51,3 +51,18 @@ conclass("Wow!", [
 ]);
 // Outputs: Wow! this is deep
 ```
+
+### Example in React
+Conclass is a perfect match with React!
+```jsx
+import conclass from 'conclass';
+
+const Button = ({ large, primary, children }) => <button className={conclass({ large, primary })}>{children}</button>;
+
+// So you can use:
+...
+
+render() {
+	return <Button large primary>Click me!</Button>;
+}
+```
