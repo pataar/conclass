@@ -1,5 +1,5 @@
 import test from "ava";
-import conclass from "./index";
+import conclass from ".";
 
 test("simple", async t => {
 	let classlist = conclass("main", "second", ["more", "classes"]);

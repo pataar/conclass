@@ -1,8 +1,8 @@
 {
 	"name": "conclass",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Lightweight modern alternative for classnames",
-	"main": "dist/index.js",
+	"main": "dist/conclass.js",
 	"author": "pataar",
 	"license": "MIT",
 	"private": false,

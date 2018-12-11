@@ -13,7 +13,7 @@ module.exports = {
 	],
 	output: {
 		name: 'conclass',
-		file: 'dist/conclass.min.js',
+		file: 'dist/conclass.js',
 		format: 'umd'
 	}
 };
