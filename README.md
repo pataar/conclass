@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.com/pataar/conclass.svg?branch=master)](https://travis-ci.com/pataar/conclass)
 
 Conditional classlist generator
->A modern and lightweight >1kb alternative to [classnames](https://github.com/JedWatson/classnames).
+>A modern and lightweight <1kb alternative to [classnames](https://github.com/JedWatson/classnames).
 
 ## Install
 ```console
