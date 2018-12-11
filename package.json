@@ -1,0 +1,27 @@
+{
+	"name": "conclass",
+	"version": "1.0.0",
+	"description": "Lightweight modern alternative for classnames",
+	"main": "dist/index.js",
+	"author": "pataar",
+	"license": "MIT",
+	"private": false,
+	"devDependencies": {
+		"@babel/core": "^7.2.0",
+		"@babel/preset-env": "^7.2.0",
+		"ava": "^0.25.0",
+		"esm": "^3.0.84",
+		"rollup": "^0.67.4",
+		"rollup-plugin-babel": "^4.0.3",
+		"rollup-plugin-uglify": "^6.0.0"
+	},
+	"scripts": {
+		"build": "rollup -c",
+		"test": "ava"
+	},
+	"ava": {
+		"require": [
+			"esm"
+		]
+	}
+}
