@@ -1,6 +1,6 @@
 # conclass
 Conditional classlist generator
->A modern and lightweight alternative to [classnames](https://github.com/JedWatson/classnames).
+>A modern and lightweight >1kb alternative to [classnames](https://github.com/JedWatson/classnames).
 
 ## Install
 ```console
@@ -17,7 +17,9 @@ const enableColor = true;
 const classList = conclass("button", {
 	"large": true,
 	[color]: enableColor
-}); // which would output 'button large red'
+});
+
+// which would output 'button large red'
 
 ```
 
@@ -27,9 +29,11 @@ Conclass is really flexible. You can put in pretty much anything in any format a
 ```javascript
 import conclass from 'conclass';
 
-conclass("fa", { "fa-fw": true }); // -> fa fa-fw
+conclass("fa", { "fa-fw": true });
+// Outputs: fa fa-fw
 
-conclass("button", ["key1", {conditional: false, truthy: true}]); // -> button key1 truthy
+conclass("button", ["key1", {conditional: false, truthy: true}]);
+// Outputs: button key1 truthy
 
 conclass("Wow!", [
 	[
@@ -41,5 +45,6 @@ conclass("Wow!", [
 			}
 		]
 	]
-]); // -> Wow! this is deep
+]);
+// Outputs: Wow! this is deep
 ```

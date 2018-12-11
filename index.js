@@ -27,5 +27,4 @@ const conclass = (...args) => {
 	return classList.join(" ");
 };
 
-
 export default conclass;
