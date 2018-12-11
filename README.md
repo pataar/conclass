@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.com/pataar/conclass.svg?branch=master)](https://travis-ci.com/pataar/conclass)
 
 Conditional classlist generator
->A modern and lightweight >1kb alternative to [classnames](https://github.com/JedWatson/classnames).
+>A modern and lightweight <1kb alternative to [classnames](https://github.com/JedWatson/classnames).
 
 ## Install
 ```console
@@ -50,4 +50,26 @@ conclass("Wow!", [
 	],
 ]);
 // Outputs: Wow! this is deep
+```
+
+### Example in React
+Conclass is a perfect match with React!
+```jsx
+import conclass from 'conclass';
+
+const Button = ({ large, primary, children }) => {
+	return <button className={conclass("button", { large, primary })}>{children}</button>;
+}
+
+// So you can use:
+...
+
+render() {
+	return (
+		<Button large primary>
+			Click me!
+		</Button>
+	);
+}
+// Which would render <button class="button large primary">Click me!</button>
 ```
