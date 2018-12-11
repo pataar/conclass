@@ -58,7 +58,7 @@ Conclass is a perfect match with React!
 import conclass from 'conclass';
 
 const Button = ({ large, primary, children }) => {
-	return <button className={conclass({ large, primary })}>{children}</button>;
+	return <button className={conclass("button", { large, primary })}>{children}</button>;
 }
 
 // So you can use:
@@ -71,4 +71,5 @@ render() {
 		</Button>
 	);
 }
+// Which would render <button class="button large primary">Click me!</button>
 ```
