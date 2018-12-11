@@ -44,10 +44,10 @@ conclass("Wow!", [
 			"this",
 			"is",
 			{
-				"deep" true
-			}
-		]
-	]
+				deep: true,
+			},
+		],
+	],
 ]);
 // Outputs: Wow! this is deep
 ```
