@@ -1,6 +1,6 @@
 {
 	"name": "conclass",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Lightweight modern alternative for classnames",
 	"main": "dist/conclass.js",
 	"module": "dist/conclass.module.js",
@@ -10,12 +10,12 @@
 	"devDependencies": {
 		"@babel/core": "^7.2.0",
 		"@babel/preset-env": "^7.2.0",
-		"ava": "^0.25.0",
+		"ava": "^2.0.0",
 		"babel-preset-minify": "^0.5.0",
 		"esm": "^3.0.84",
-		"rollup": "^0.67.4",
+		"rollup": "^1.0.0",
 		"rollup-plugin-babel": "^4.0.3",
-		"rollup-plugin-terser": "^4.0.2"
+		"rollup-plugin-terser": "^5.0.2"
 	},
 	"scripts": {
 		"build": "rollup -c",
