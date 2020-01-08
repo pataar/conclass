@@ -61,9 +61,9 @@ Conclass is a perfect match with React!
 ```jsx
 import conclass from 'conclass';
 
-const Button = ({ large, primary, children }) => {
-	return <button className={conclass("button", { large, primary })}>{children}</button>;
-}
+const Button = ({ large, primary, children }) => (
+	<button className={conclass("button", { large, primary })}>{children}</button>
+);
 
 // So you can use:
 
