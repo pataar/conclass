@@ -37,6 +37,7 @@ conclass("fa", { "fa-fw": true });
 
 conclass("button", ["key1", {conditional: false, truthy: true}]);
 // Outputs: button key1 truthy
+
 const otherClasses = ["rest", "items"];
 conclass("button", ["key1", {conditional: false, truthy: true}], ...otherClasses);
 // Outputs: button key1 truthy rest items
@@ -80,7 +81,7 @@ const MyForm = () => (
 );
 
 ```
-Which would be:
+Which would be rendered to HTML as:
 ```html
 <div>
 	<button class="button large primary">
