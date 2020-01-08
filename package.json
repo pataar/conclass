@@ -1,6 +1,6 @@
 {
 	"name": "conclass",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "Lightweight modern alternative for classnames",
 	"main": "dist/conclass.js",
 	"module": "dist/conclass.module.js",
