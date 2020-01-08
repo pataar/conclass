@@ -43,8 +43,8 @@ test("complex", async t => {
 				],
 			],
 			{
-				"addition": true
-			}
+				addition: true,
+			},
 		],
 		"second",
 	);
