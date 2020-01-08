@@ -7,6 +7,18 @@ test("simple", async t => {
 	t.is(classlist, "main second more classes");
 });
 
+test("rest", async t => {
+
+	const otherClasses = ["rest", "items"];
+
+	let classlist = conclass(
+		"main",
+		...otherClasses
+	);
+
+	t.is(classlist, "main rest items");
+});
+
 test("advanced", async t => {
 	let classlist = conclass(
 		"main",

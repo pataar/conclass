@@ -37,6 +37,9 @@ conclass("fa", { "fa-fw": true });
 
 conclass("button", ["key1", {conditional: false, truthy: true}]);
 // Outputs: button key1 truthy
+const otherClasses = ["rest", "items"];
+conclass("button", ["key1", {conditional: false, truthy: true}], ...otherClasses);
+// Outputs: button key1 truthy rest items
 
 conclass("Wow!", [
 	[
@@ -62,14 +65,31 @@ const Button = ({ large, primary, children }) => {
 }
 
 // So you can use:
-...
 
-render() {
-	return (
+const MyForm = () => (
+	<div>
+		{/* ... */}
 		<Button large primary>
 			Click me!
 		</Button>
-	);
-}
-// Which would render <button class="button large primary">Click me!</button>
+
+		<Button large>
+			Or click me!
+		</Button>
+	</div>
+);
+
 ```
+Which would be:
+```html
+<div>
+	<button class="button large primary">
+		Click me!
+	</button>
+
+	<button class="button large">
+		Or click me!
+	</button>
+</div>
+```
+
