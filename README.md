@@ -18,8 +18,8 @@ const color = "red";
 const enableColor = true;
 
 const classList = conclass("button", {
-	"large": true,
-	[color]: enableColor
+  "large": true,
+  [color]: enableColor
 });
 
 // which would output 'button large red'
@@ -43,15 +43,15 @@ conclass("button", ["key1", {conditional: false, truthy: true}], ...otherClasses
 // Outputs: button key1 truthy rest items
 
 conclass("Wow!", [
-	[
-		[
-			"this",
-			"is",
-			{
-				deep: true,
-			},
-		],
-	],
+  [
+    [
+      "this",
+      "is",
+      {
+          deep: true,
+      },
+    ],
+  ],
 ]);
 // Outputs: Wow! this is deep
 ```
@@ -62,35 +62,35 @@ Conclass is a perfect match with React!
 import conclass from 'conclass';
 
 const Button = ({ large, primary, children }) => (
-	<button className={conclass("button", { large, primary })}>{children}</button>
+  <button className={conclass("button", { large, primary })}>{children}</button>
 );
 
 // So you can use:
 
 const MyForm = () => (
-	<div>
-		{/* ... */}
-		<Button large primary>
-			Click me!
-		</Button>
+  <div>
+    {/* ... */}
+    <Button large primary>
+      Click me!
+    </Button>
 
-		<Button large>
-			Or click me!
-		</Button>
-	</div>
+    <Button large>
+      Or click me!
+    </Button>
+  </div>
 );
 
 ```
 Which would be rendered to HTML as:
 ```html
 <div>
-	<button class="button large primary">
-		Click me!
-	</button>
+  <button class="button large primary">
+    Click me!
+  </button>
 
-	<button class="button large">
-		Or click me!
-	</button>
+  <button class="button large">
+    Or click me!
+    </button>
 </div>
 ```
 
