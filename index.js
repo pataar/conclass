@@ -1,4 +1,4 @@
-const conclass = (...args) => {
+export default function conclass(...args) {
 	if (typeof args === "undefined" || !args) {
 		return "";
 	}
@@ -17,8 +17,7 @@ const conclass = (...args) => {
 			arg.forEach(c => !!c && classList.push(conclass(c)));
 		} else if (typeof arg === "object") {
 			Object.keys(arg).forEach(key => {
-				let value = arg[key];
-				if (!!value) {
+				if (!!arg[key]) {
 					classList.push(key);
 				}
 			});
@@ -26,6 +25,4 @@ const conclass = (...args) => {
 	}
 
 	return classList.join(" ");
-};
-
-export default conclass;
+}
